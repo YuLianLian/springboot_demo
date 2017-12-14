@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.yll</groupId>
+	<artifactId>yll.springboot.demo.api</artifactId>
+	<version>2.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<parent>
+		<groupId>com.yll</groupId>
+		<artifactId>yll.springboot.demo</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	<dependencies>
+		<!-- springboot 集成 jersey 、swagger 实现 JAX-RS Restful -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jersey</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.swagger</groupId>
+			<artifactId>swagger-jersey2-jaxrs</artifactId>
+			<version>${swagger.version}</version>
+		</dependency>
+		<!-- springboot 集成 jersey 、swagger 实现 JAX-RS Restful 結束 -->
+
+		<!-- springboot 整合 redis -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-redis</artifactId>
+			<version>${spring.boot.redis.version}</version>
+		</dependency>
+		
+		<!-- shiro权限控制框架 -->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-spring</artifactId>
+			<version>${shiro.version}</version>
+		</dependency>
+	</dependencies>
+</project>
